@@ -39,7 +39,7 @@ function CarDetails() {
   },[cars, id])
 
   return car ? (
-    <div className='px-6 md:px-16 lg:px-24 xl:px-32 mt-16'>
+    <div className='px-6 md:px-16 lg:px-24 xl:px-32 mt-6 max-sm:mt-5'>
 
       <button onClick={()=>navigate(-1)} className='flex items-center gap-2 mb-6 text-gray-500 cursor-pointer'>
         <img src={assets.arrow_icon} alt="" className='rotate-180 opacity-65' />
@@ -123,11 +123,11 @@ function CarDetails() {
 
             <div className='flex flex-col gap-2'>
               <label htmlFor="pickup-date">Pickup Date</label>
-              <input value={pickupDate} onChange={(e)=>setPickupDate(e.target.value)} type="date" className='border border-borderColor px-3 py-2 rounded-lg' required id='pickup-date' min={new Date().toISOString().split('T')[0]} />
+              <input value={pickupDate} onChange={(e)=>setPickupDate(e.target.value)} type="date" className='border border-borderColor px-3 py-2 rounded-lg max-sm:w-full' required id='pickup-date' min={new Date().toISOString().split('T')[0]} />
             </div>
             <div className='flex flex-col gap-2'>
               <label htmlFor="return-date">Return Date</label>
-              <input value={returnDate} onChange={(e)=>setReturnDate(e.target.value)} type="date" className='border border-borderColor px-3 py-2 rounded-lg' required id='return-date' />
+              <input value={returnDate} onChange={(e)=>setReturnDate(e.target.value)} type="date" className='border border-borderColor px-3 py-2 rounded-lg max-sm:w-full' required id='return-date' />
             </div>
 
             <button className='w-full bg-primary hover:bg-primary-dull transition-all py-3 font-medium text-white rounded-xl cursor-pointer'>
