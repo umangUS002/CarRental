@@ -20,13 +20,13 @@ function Hero() {
     animate= {{opacity: 1}}
     transition= {{duration: 0.8}}
     
-    className='h-screen flex flex-col items-center justify-center gap-14 max-sm:gap-6 bg-light text-center'>
+    className='h-screen flex flex-col items-center justify-center gap-14 max-sm:gap-10 bg-light text-center'>
       <motion.h1 
       initial={{y: 50, opacity: 0}} 
       animate= {{y: 0, opacity: 1}}
       transition= {{duration: 0.8, delay: 0.2}}
       
-      className='text-4xl md:text-5xl font-semibold max-sm:-mt-6 '>Luxury Cars on Rent</motion.h1>
+      className='text-4xl md:text-5xl font-semibold max-sm:-mt-10 '>Luxury Cars on Rent</motion.h1>
       
       <motion.form 
       initial= {{scale: 0.95, opacity: 0, y: 50}}
