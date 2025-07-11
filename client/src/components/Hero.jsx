@@ -20,7 +20,7 @@ function Hero() {
     animate= {{opacity: 1}}
     transition= {{duration: 0.8}}
     
-    className='h-[calc(100vh-58px)] max-sm:h-[calc(100vh-15px)] flex flex-col items-center justify-center gap-14 max-sm:gap-7 bg-light text-center'>
+    className='h-[calc(100vh-58px)] max-sm:h-[calc(100vh-70px)] flex flex-col items-center justify-center gap-14 max-sm:gap-7 bg-light text-center'>
       <motion.h1 
       initial={{y: 50, opacity: 0}} 
       animate= {{y: 0, opacity: 1}}
